@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>250</width>
+    <width>297</width>
     <height>204</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@
   <widget class="QLineEdit" name="unedit">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>130</x>
      <y>10</y>
      <width>161</width>
      <height>22</height>
@@ -52,7 +52,7 @@
   <widget class="QLineEdit" name="pwedit">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>130</x>
      <y>40</y>
      <width>161</width>
      <height>22</height>
@@ -65,7 +65,7 @@
   <widget class="QLineEdit" name="emedit">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>130</x>
      <y>70</y>
      <width>161</width>
      <height>22</height>
@@ -77,18 +77,18 @@
     <rect>
      <x>10</x>
      <y>70</y>
-     <width>53</width>
+     <width>121</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>E-Mail:</string>
+    <string>ROBLOX username:</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>90</x>
      <y>160</y>
      <width>93</width>
      <height>28</height>
@@ -103,12 +103,12 @@
     <rect>
      <x>10</x>
      <y>95</y>
-     <width>231</width>
+     <width>281</width>
      <height>61</height>
     </rect>
    </property>
    <property name="text">
-    <string>Please give a valid E-Mail address. Accounts with an invalid E-Mail address will be banned automatically.</string>
+    <string>Please give a valid ROBLOX username. Accounts with an invalid ROBLOX username will be banned after a certain time.</string>
    </property>
    <property name="textFormat">
     <enum>Qt::AutoText</enum>

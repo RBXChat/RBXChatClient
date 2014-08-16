@@ -97,9 +97,9 @@ void MainWindow::displayError(QAbstractSocket::SocketError socketError) {
         case QAbstractSocket::ConnectionRefusedError:
             QMessageBox::information(this, tr("RBXChat Client"),
                                      tr("The connection was refused by the peer. "
-                                        "Make sure the fortune server is running, "
-                                        "and check that the host name and port "
-                                        "settings are correct."));
+                                        "Make sure the server is running, "
+                                        "and check that the host name "
+                                        "is correct."));
             break;
         default:
             QMessageBox::information(this, tr("RBXChat Client"),
@@ -159,6 +159,8 @@ void MainWindow::setUsernamePassword(QString un, QString pw) {
 
 void MainWindow::openConnection() {
     //qDebug() << "connect";
+    QString sendfirst = "\x05"; // Client version
+    this->sendMessage(sendfirst);
     connect(sock, SIGNAL(readyRead()), this, SLOT(showDataFromSocket()));
     connect(sock, SIGNAL(disconnected()), this, SLOT(connectionClosed()));
     QString send = "\x01" + this->username + "\x02" + this->password + "\x03";
